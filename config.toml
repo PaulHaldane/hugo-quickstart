@@ -1,4 +1,27 @@
 baseURL = "https://dazzling-colden-6f34f7.netlify.com/"
 languageCode = "en-us"
 title = "Paul's site"
-theme = "ananke"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = "true"
+theme = "hamburg"
+
+[params]
+    # Short subtitle/tagline. This is displayed in the header.
+    themecolor = "#hexcolor" # Defines the tab color in Chrome for Android.
+    # To load additional CSS styles
+    customCSS = ['hamburg.css']
+    # Show this very user-friendly and absolutely not annoying GDPR notice at the bottom of the page
+    ShowGDPRNotice = false
+
+[languages]
+    [languages.en]
+        languageCode = "en"
+        languageName = "English"
+        subtitle = "A simple subtitle"
+        # Copyright notice. This is displayer in the footer.
+        copyright = "&copy; some license"
+        [languages.en.menu]
+            [[languages.en.menu.main]]
+                name = "About"
+                identifier = "about"
+                url = "pages/about"
